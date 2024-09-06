@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Página con Carga y Publicidad</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <!-- Pantalla de carga -->
+    <div id="loadingScreen" class="loading-screen">
+        <div class="circle"></div>
+    </div>
+
+    <!-- Publicidad (overlay) -->
+    <div id="adScreen" class="ad-screen hidden">
+        <div class="ad-content">
+            <p>Publicidad - La página estará disponible en <span id="countdown">5</span> segundos</p>
+            <button id="closeAd" class="close hidden">&times;</button>
+        </div>
+    </div>
+
+    <!-- Contenido real de la página -->
+    <div id="pageContent" class="hidden">
+        <h1>Contenido Real de la Página</h1>
+        <p>Este es el contenido que se muestra después de cerrar la publicidad.</p>
+    </div>
+
+</body>
+</html>
+
+
